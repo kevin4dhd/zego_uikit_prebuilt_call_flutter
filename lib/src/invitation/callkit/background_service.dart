@@ -256,8 +256,11 @@ class ZegoCallKitBackgroundService {
     } else {
       /// background callkit call, not need to navigate
       try {
-        Navigator.of(_pageManager!.callInvitationData.contextQuery!.call())
-            .pop();
+        if (Navigator.of(_pageManager!.callInvitationData.contextQuery!.call())
+            .canPop()) {
+          Navigator.of(_pageManager!.callInvitationData.contextQuery!.call())
+              .pop();
+        }
       } catch (e) {
         ZegoLoggerService.logError(
           'Navigator pop exception:$e, '
