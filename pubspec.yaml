@@ -8,6 +8,7 @@ screenshots:
     path: images/one-on-one-call.png
   - description: "full-featured group call"
     path: images/group-call.png
+publish_to: none
 
 environment:
   sdk: ">=2.16.2 <4.0.0"
@@ -17,7 +18,11 @@ dependencies:
   flutter:
     sdk: flutter
 
-  zego_uikit: ^2.28.0
+  zego_uikit:
+    git:
+      url: https://github.com/kevin4hig/zego_uikit
+      ref: 057e65bad5269833adf4ede9759b3563219b6925
+    #path: ../zego_uikit
   zego_plugin_adapter: ^2.13.5
   zego_uikit_signaling_plugin: ^2.8.8
 

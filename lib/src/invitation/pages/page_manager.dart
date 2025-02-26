@@ -853,6 +853,8 @@ class ZegoCallInvitationPageManager {
   /// type:1,
   /// data:{"call_id":"call_073493_1694162272838","invitees":[{"user_id":"946042","user_name":"user_946042"}],"timeout":60,"custom_data":""}
   Future<void> onInvitationReceived(Map<String, dynamic> params) async {
+    return;
+
     /// call inviter
     var inviter = ZegoUIKitUser.empty();
     if (params['inviter'] is ZegoUIKitUser) {
