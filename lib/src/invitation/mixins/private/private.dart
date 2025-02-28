@@ -376,7 +376,6 @@ class ZegoCallInvitationServicePrivateImpl
       _pageManager?.listenStream();
 
       if (Platform.isAndroid) {
-        return;
         getOfflineCallKitCacheParams().then((offlineCallKitCacheParameter) {
           ZegoLoggerService.logInfo(
             'offline callkit params: ${offlineCallKitCacheParameter.dict}',

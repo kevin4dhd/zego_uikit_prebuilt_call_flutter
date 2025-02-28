@@ -21,7 +21,7 @@ dependencies:
   zego_uikit:
     git:
       url: https://github.com/kevin4hig/zego_uikit
-      ref: 057e65bad5269833adf4ede9759b3563219b6925
+      ref: b5a5aa85bbf1cb730d5d02ed56efc7b5e32b9eab
     #path: ../zego_uikit
   zego_plugin_adapter: ^2.13.5
   zego_uikit_signaling_plugin: ^2.8.8
